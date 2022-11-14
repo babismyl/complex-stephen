@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: client
-        image: stephengrider/multi-client
+        image: babismyl/multi-client
         resources:
           limits:
             memory: "512Mi"
