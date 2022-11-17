@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+      - name: server
+        image: babismyl/multi-server
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "2000m"
+        ports:
+        - containerPort: 5000
