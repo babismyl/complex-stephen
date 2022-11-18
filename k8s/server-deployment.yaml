@@ -17,7 +17,7 @@ spec:
         image: babismyl/multi-server
         resources:
           limits:
-            memory: "512Mi"
-            cpu: "2000m"
+            memory: "128Mi"
+            cpu: "500m"
         ports:
         - containerPort: 5000

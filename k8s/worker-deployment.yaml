@@ -17,5 +17,5 @@ spec:
         image: babismyl/multi-worker
         resources:
           limits:
-            memory: "512Mi"
-            cpu: "2000m"
+            memory: "128Mi"
+            cpu: "500m"
